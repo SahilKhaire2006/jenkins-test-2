@@ -45,7 +45,7 @@ pipeline{
             steps{
                 emailext(
                     subject:"Application is deployed using CICD pipeline!!",
-                    body:"application is deploed and ready on http://15.207.21.19:3000",
+                    body:"application is deployed and ready on http://15.207.21.19:3000",
                     to:"${EMAIL}"
                 )
             }
